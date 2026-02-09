@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Finance</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="app-shell">
+    <header class="app-header">
+      <div class="brand">
+        <div class="brand-logo">SP</div>
+        <div class="brand-text">
+          <h1>StudyPulse</h1>
+          <p>Productivity & Finance</p>
+        </div>
+      </div>
+
+      <nav class="nav">
+        <a href="index.html">Dashboard</a>
+        <a href="tasks.html">Tasks</a>
+        <a href="focus.html">Focus</a>
+        <a href="stats.html">Stats</a>
+        <a href="assignments.html">Assignments</a>
+        <a class="active" aria-current="page" href="finance.html">Finance</a>
+        <a href="settings.html">Settings</a>
+      </nav>
+    </header>
+
+    <main class="page page--finance">
+      <section class="page-header section-header section-header--finance">
+        <h2 class="heading-accent heading-accent--finance">💰 Finance Tracker</h2>
+        <p>Keep track of your income and expenses.</p>
+      </section>
+
+      <section class="dashboard dashboard--finance">
+        <!-- Total balance -->
+        <section class="card card--primary card--accent-finance">
+          <h2>Total Balance</h2>
+          <h1>₹22000</h1>
+          <p>Income: ₹31,000 | Expenses: ₹14,000 | Buffer: ₹5000</p>
+        </section>
+
+        <!-- Pie chart -->
+        <section class="card card--accent-finance">
+          <h2>Quick Stats</h2>
+          
+          <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 12px; margin-top: 16px;">
+            <div class="stat-card">
+              <p class="stat-label">📈 Monthly Income</p>
+              <h3 class="stat-value">₹31,000</h3>
+              <p class="stat-note" style="color: #16a34a;">+5% vs last month</p>
+            </div>
+            
+            <div class="stat-card">
+              <p class="stat-label">💸 Total Expenses</p>
+              <h3 class="stat-value">₹14,000</h3>
+              <p class="stat-note" style="color: #dc2626;">+12% vs last month</p>
+            </div>
+            
+            <div class="stat-card">
+              <p class="stat-label">💚 Net Savings</p>
+              <h3 class="stat-value">₹17,000</h3>
+              <p class="stat-note" style="color: #4f46e5;">+2% vs last month</p>
+            </div>
+          </div>
+
+          <!-- Progress bar - Monthly savings goal -->
+          <div style="margin-top: 20px; padding-top: 16px; border-top: 1px solid #e5e7eb;">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+              <p class="stat-label">Monthly Savings Goal Progress</p>
+              <span style="font-size: 14px; font-weight: 600; color: #0f172a;">68%</span>
+            </div>
+            <div class="progress-bar">
+              <div class="progress" style="width: 68%; background: linear-gradient(90deg, #d8b4fe 0%, #c084fc 100%);"></div>
+            </div>
+            <p style="font-size: 12px; color: #6b7280; margin-top: 6px;">Goal: ₹25,000 · Current: ₹17,000</p>
+          </div>
+        </section>
+
+        <!-- Alternative: Pie chart (commented for reference) -->
+        <!-- Pie chart section for future use
+        <section class="card">
+          <div style="display:flex;justify-content:space-between;align-items:center;">
+            <h2>Income vs Expenses</h2>
+            <div class="card-actions">
+              <button class="button-outline" id="record-expense-btn">+ Record Expense</button>
+            </div>
+          </div>
+          <div class="pie-container">
+            <!-- Pie Chart -->
+            <div class="pie-chart"></div>
+            
+            <!-- Buffer Space -->
+            <div class="pie-buffer"></div>
+            
+            <!-- Legend & Details -->
+            <div class="pie-legend">
+              <div class="pie-legend-row">
+                <span class="dot income-dot"></span>
+                <div class="legend-content">
+                  <p class="legend-label">Income</p>
+                  <p class="legend-percent">62%</p>
+                </div>
+                <div class="legend-amount">₹31,000</div>
+              </div>
+              <div class="pie-legend-row">
+                <span class="dot expense-dot"></span>
+                <div class="legend-content">
+                  <p class="legend-label">Expenses</p>
+                  <p class="legend-percent">28%</p>
+                </div>
+                <div class="legend-amount">₹14,000</div>
+              </div>
+              <div class="pie-legend-row">
+                <span class="dot saving-dot"></span>
+                <div class="legend-content">
+                  <p class="legend-label">Savings & Buffer</p>
+                  <p class="legend-percent">10%</p>
+                </div>
+                <div class="legend-amount">₹5,000</div>
+              </div>
+            </div>
+            
+            <!-- Stats Column -->
+            <div class="pie-stats">
+              <div class="stat-item">
+                <span class="stat-label">Total</span>
+                <span class="stat-value">₹50,000</span>
+              </div>
+              <div class="stat-divider"></div>
+              <div class="stat-item">
+                <span class="stat-label">Monthly Avg</span>
+                <span class="stat-value">₹8,300</span>
+              </div>
+              <div class="stat-divider"></div>
+              <div class="stat-item">
+                <span class="stat-label">Status</span>
+                <span class="stat-badge stat-badge--good">On Track</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Record Expense Form (hidden, toggled by + Record Expense) -->
+          <form class="form-inline" id="record-expense-form" style="display:none; margin-top:12px;">
+            <input type="text" name="desc" placeholder="Description" required style="padding:8px;border-radius:6px;border:1px solid #d1d5db;margin-right:8px;">
+            <input type="number" name="amount" placeholder="Amount" required style="padding:8px;border-radius:6px;border:1px solid #d1d5db;margin-right:8px;">
+            <button class="button-outline" type="submit">Record</button>
+          </form>
+
+        </section>
+        -->
+
+        <!-- Expense breakdown -->
+        <section class="card">
+          <h2>Expense Breakdown</h2>
+
+          <div class="category-row">
+            <div class="category-label">
+              <span>🍔 Food</span>
+              <span class="pill priority-high">High</span>
+            </div>
+            <div class="category-bar">
+              <div class="category-bar-fill category-bar-fill--food"></div>
+            </div>
+            <p>₹2,800</p>
+          </div>
+
+          <div class="category-row">
+            <div class="category-label">
+              <span>🚕 Travel</span>
+              <span class="pill priority-high">High</span>
+            </div>
+            <div class="category-bar">
+              <div class="category-bar-fill category-bar-fill--travel"></div>
+            </div>
+            <p>₹1,500</p>
+          </div>
+
+          <div class="category-row">
+            <div class="category-label">
+              <span>📚 Education</span>
+            </div>
+            <div class="category-bar">
+              <div class="category-bar-fill category-bar-fill--education"></div>
+            </div>
+            <p>₹1,700</p>
+          </div>
+
+          <div class="category-row">
+            <div class="category-label">
+              <span>💰 Savings</span>
+            </div>
+            <div class="category-bar">
+              <div class="category-bar-fill category-bar-fill--savings"></div>
+            </div>
+            <p>₹2,000</p>
+          </div>
+
+          <div class="category-row">
+            <div class="category-label">
+              <span>💰 Investment</span>
+            </div>
+            <div class="category-bar">
+              <div class="category-bar-fill category-bar-fill--food"></div>
+            </div>
+            <p>₹6000</p>
+          </div>
+
+        </section>
+
+        <!-- Recent transactions -->
+        <section class="card">
+          <h2>Recent Transactions</h2>
+
+          <div class="transaction">
+            <div class="transaction-main">
+              <span>Groww Payment</span>
+              <span class="transaction-meta">Feb 7 · Income</span>
+            </div>
+            <span class="transaction-amount--income">+₹5,000</span>
+          </div>
+
+          <div class="transaction">
+            <div class="transaction-main">
+              <span>Grocery Shopping</span>
+              <span class="transaction-meta">Feb 6 · Food</span>
+            </div>
+            <span class="transaction-amount--expense">−₹850</span>
+          </div>
+
+          <div class="transaction">
+            <div class="transaction-main">
+              <span>Bus Pass Renewal</span>
+              <span class="transaction-meta">Feb 5 · Travel</span>
+            </div>
+            <span class="transaction-amount--expense">−₹500</span>
+          </div>
+
+          <div class="transaction">
+            <div class="transaction-main">
+              <span>Book Purchase</span>
+              <span class="transaction-meta">Feb 4 · Education</span>
+            </div>
+            <span class="transaction-amount--expense">−₹700</span>
+          </div>
+        </section>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

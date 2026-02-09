@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-shell">
+    <header class="app-header">
+      <div class="brand">
+        <div class="brand-logo">SP</div>
+        <div class="brand-text">
+          <h1>StudyPulse</h1>
+          <p>Productivity & Finance</p>
+        </div>
+      </div>
+
+      <nav class="nav">
+        <a class="active" aria-current="page" href="index.html">Dashboard</a>
+        <a href="tasks.html">Tasks</a>
+        <a href="focus.html">Focus</a>
+        <a href="stats.html">Stats</a>
+        <a href="assignments.html">Assignments</a>
+        <a href="finance.html">Finance</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-header section-header">
+        <h2 class="heading-accent">📋 Dashboard</h2>
+        <p>Overview of today’s tasks, focus time and finance.</p>
+      </section>
+      <!-- Quick Metrics Row -->
+      <section class="metrics-row">
+        <div class="metric-card">
+          <div class="metric-icon">🔥</div>
+          <div class="metric-content">
+            <p class="metric-label">Daily Streak</p>
+            <h3 class="metric-value">12 days</h3>
+          </div>
+        </div>
+
+        <div class="metric-card">
+          <div class="metric-icon">⏱️</div>
+          <div class="metric-content">
+            <p class="metric-label">Focus This Week</p>
+            <h3 class="metric-value">12.5 hrs</h3>
+          </div>
+        </div>
+
+        <div class="metric-card">
+          <div class="metric-icon">📊</div>
+          <div class="metric-content">
+            <p class="metric-label">Tasks Today</p>
+            <h3 class="metric-value">2 / 5</h3>
+          </div>
+        </div>
+
+        <div class="metric-card">
+          <div class="metric-icon">💰</div>
+          <div class="metric-content">
+            <p class="metric-label">Budget Used</p>
+            <h3 class="metric-value">60% / 100%</h3>
+          </div>
+        </div>
+      </section>
+      <section class="dashboard">
+        <section class="card large">
+          <h2>Today’s Tasks</h2>
+          <div class="tabs">
+            <button class="active">All</button>
+            <button>Study</button>
+            <button>Health</button>
+            <button>Personal</button>
+          </div>
+
+          <div class="task">
+            <div class="task-left">
+              <div class="task-checkbox done"></div>
+              <p class="task-title completed">Complete Linear Algebra Assignment</p>
+            </div>
+            <div class="task-meta">
+              <span class="pill priority-high">High</span>
+              <span class="pill category">Study</span>
+            </div>
+          </div>
+
+          <div class="task">
+            <div class="task-left">
+              <div class="task-checkbox"></div>
+              <p class="task-title">Review React Notes</p>
+            </div>
+            <div class="task-meta">
+              <span class="pill priority-medium">Medium</span>
+              <span class="pill category">Study</span>
+            </div>
+          </div>
+
+          <div class="task">
+            <div class="task-left">
+              <div class="task-checkbox"></div>
+              <p class="task-title">Go for a 30‑min run</p>
+            </div>
+            <div class="task-meta">
+              <span class="pill priority-low">Low</span>
+              <span class="pill category">Health</span>
+            </div>
+          </div>
+
+          <div class="task">
+            <div class="task-left">
+              <div class="task-checkbox done"></div>
+              <p class="task-title completed">Update budget spreadsheet</p>
+            </div>
+            <div class="task-meta">
+              <span class="pill priority-medium">Medium</span>
+              <span class="pill category">Personal</span>
+            </div>
+          </div>
+        </section>
+
+        <section class="card">
+          <h2>Daily Goal</h2>
+          <p>3 / 5 tasks completed</p>
+          <div class="progress-bar">
+            <div class="progress"></div>
+          </div>
+        </section>
+
+        <section class="card">
+          <h2>Focus Timer</h2>
+          <p>Focus session in progress</p>
+          <h1>16:20</h1>
+        </section>
+
+        <section class="card finance-balance">
+          <h2>Total Balance</h2>
+          <h1>₹12,450</h1>
+          <p>Income — 62% · Expenses — 38%</p>
+        </section>
+
+        <section class="card">
+          <h2>Insights</h2>
+          <li>
+            <ul>Most productive day: Wednesday</ul>
+            <ul>Weekly focus: 12.5 hrs (+18%).</ul>
+          </li>
+        </section>
+
+        <section class="card large">
+          <h2>Weekly Summary</h2>
+          
+          <div style="display: grid; grid-template-columns: repeat(7, 1fr); gap: 10px; margin-top: 14px;">
+            <div class="day-card">
+              <p class="day-label">Mon</p>
+              <div class="day-stats">
+                <p class="day-value">4</p>
+                <p class="day-meta">tasks</p>
+              </div>
+              <p class="day-hours">2.5h</p>
+            </div>
+            
+            <div class="day-card">
+              <p class="day-label">Tue</p>
+              <div class="day-stats">
+                <p class="day-value">5</p>
+                <p class="day-meta">tasks</p>
+              </div>
+              <p class="day-hours">3.2h</p>
+            </div>
+            
+            <div class="day-card">
+              <p class="day-label">Wed</p>
+              <div class="day-stats">
+                <p class="day-value">5</p>
+                <p class="day-meta">tasks</p>
+              </div>
+              <p class="day-hours">3h</p>
+            </div>
+            
+            <div class="day-card">
+              <p class="day-label">Thu</p>
+              <div class="day-stats">
+                <p class="day-value">3</p>
+                <p class="day-meta">tasks</p>
+              </div>
+              <p class="day-hours">2h</p>
+            </div>
+            
+            <div class="day-card day-card--active">
+              <p class="day-label">Fri</p>
+              <div class="day-stats">
+                <p class="day-value">5</p>
+                <p class="day-meta">tasks</p>
+              </div>
+              <p class="day-hours">3.5h</p>
+            </div>
+            
+            <div class="day-card">
+              <p class="day-label">Sat</p>
+              <div class="day-stats">
+                <p class="day-value">2</p>
+                <p class="day-meta">tasks</p>
+              </div>
+              <p class="day-hours">1.5h</p>
+            </div>
+            
+            <div class="day-card">
+              <p class="day-label">Sun</p>
+              <div class="day-stats">
+                <p class="day-value">3</p>
+                <p class="day-meta">tasks</p>
+              </div>
+              <p class="day-hours">2h</p>
+            </div>
+          </div>
+          
+          <div style="margin-top: 16px; padding-top: 14px; border-top: 1px solid #e5e7eb; display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 12px;">
+            <div>
+              <p style="font-size: 11px; color: #9ca3af; font-weight: 600; text-transform: uppercase; margin: 0;">Total Tasks</p>
+              <p style="font-size: 18px; font-weight: 700; color: #0f172a; margin: 4px 0;">27/35</p>
+            </div>
+            <div>
+              <p style="font-size: 11px; color: #9ca3af; font-weight: 600; text-transform: uppercase; margin: 0;">Focus Hours</p>
+              <p style="font-size: 18px; font-weight: 700; color: #0f172a; margin: 4px 0;">17.7h</p>
+            </div>
+            <div>
+              <p style="font-size: 11px; color: #9ca3af; font-weight: 600; text-transform: uppercase; margin: 0;">Productivity</p>
+              <p style="font-size: 18px; font-weight: 700; color: #16a34a; margin: 4px 0;">77%</p>
+            </div>
+          </div>
+        </section>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

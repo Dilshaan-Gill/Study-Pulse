@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stats</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="app-shell">
+    <header class="app-header">
+      <div class="brand">
+        <div class="brand-logo">SP</div>
+        <div class="brand-text">
+          <h1>StudyPulse</h1>
+          <p>Productivity & Finance</p>
+        </div>
+      </div>
+
+      <nav class="nav">
+        <a href="index.html">Dashboard</a>
+        <a href="tasks.html">Tasks</a>
+        <a href="focus.html">Focus</a>
+        <a class="active" aria-current="page" href="stats.html">Stats</a>
+        <a href="assignments.html">Assignments</a>
+        <a href="finance.html">Finance</a>
+        <a href="settings.html">Settings</a>
+      </nav>
+    </header>
+
+    <main class="page page--stats">
+      <section class="page-header section-header section-header--stats">
+        <h2 class="heading-accent heading-accent--stats">📊 Statistics</h2>
+        <p>Track your productivity over time.</p>
+      </section>
+
+      <section class="dashboard">
+        <!-- Stat summary cards -->
+        <section class="card highlight-card">
+          <div class="stat-item">
+            <p class="stat-label">📋 Tasks</p>
+            <h3 class="stat-value">28</h3>
+          </div>
+        </section>
+
+        <section class="card highlight-card">
+          <div class="stat-item">
+            <p class="stat-label">⏱️ Focus Hours</p>
+            <h3 class="stat-value">14h</h3>
+          </div>
+        </section>
+
+        <section class="card highlight-card">
+          <div class="stat-item">
+            <p class="stat-label">🔥 Streak</p>
+            <h3 class="stat-value">5 days</h3>
+          </div>
+        </section>
+
+        <section class="card">
+          <h2>📈 Productivity</h2>
+          <p>Up <strong style="color: #16a34a;">+18%</strong> vs last week</p>
+          <div class="progress-bar progress-bar--thick">
+            <div class="progress" style="width: 68%"></div>
+          </div>
+        </section>
+
+        <section class="card">
+          <h2>🏆 Best Day</h2>
+          <p><strong>Wednesday</strong></p>
+          <p style="font-size: 12px; margin-top: 4px;">6 tasks · 3.5h focus</p>
+        </section>
+
+        <section class="card">
+          <h2>📊 Avg / Day</h2>
+          <p><strong>4.0</strong> tasks</p>
+          <p style="font-size: 12px; margin-top: 4px;">2h focus</p>
+        </section>
+
+        <!-- Weekly tasks chart -->
+        <section class="card large">
+          <h2>Weekly Tasks</h2>
+          <div class="bar-chart">
+            <div class="bar"><div class="bar-fill bar-fill--m"></div></div>
+            <div class="bar"><div class="bar-fill bar-fill--xl"></div></div>
+            <div class="bar"><div class="bar-fill bar-fill--l"></div></div>
+            <div class="bar"><div class="bar-fill bar-fill--m"></div></div>
+            <div class="bar"><div class="bar-fill bar-fill--s"></div></div>
+            <div class="bar"><div class="bar-fill bar-fill--s"></div></div>
+            <div class="bar"><div class="bar-fill bar-fill--s"></div></div>
+          </div>
+          <div class="bar-labels">
+            <span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span><span>Sun</span>
+          </div>
+        </section>
+
+        <!-- Focus hours chart -->
+        <section class="card large">
+          <h2>Focus Hours</h2>
+          <div class="bar-chart">
+            <div class="bar"><div class="bar-fill bar-fill--xl"></div></div>
+            <div class="bar"><div class="bar-fill bar-fill--l"></div></div>
+            <div class="bar"><div class="bar-fill bar-fill--m"></div></div>
+            <div class="bar"><div class="bar-fill bar-fill--m"></div></div>
+            <div class="bar"><div class="bar-fill bar-fill--s"></div></div>
+            <div class="bar"><div class="bar-fill bar-fill--s"></div></div>
+            <div class="bar"><div class="bar-fill bar-fill--s"></div></div>
+          </div>
+          <div class="bar-labels">
+            <span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span><span>Sun</span>
+          </div>
+        </section>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

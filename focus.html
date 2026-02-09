@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Focus</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="app-shell">
+    <header class="app-header">
+      <div class="brand">
+        <div class="brand-logo">SP</div>
+        <div class="brand-text">
+          <h1>StudyPulse</h1>
+          <p>Productivity & Finance</p>
+        </div>
+      </div>
+
+      <nav class="nav">
+        <a href="index.html">Dashboard</a>
+        <a href="tasks.html">Tasks</a>
+        <a class="active" aria-current="page" href="focus.html">Focus</a>
+        <a href="stats.html">Stats</a>
+        <a href="assignments.html">Assignments</a>
+        <a href="finance.html">Finance</a>
+        <a href="settings.html">Settings</a>
+      </nav>
+    </header>
+
+    <main class="page page--focus">
+      <section class="page-header section-header section-header--focus">
+        <h2 class="heading-accent heading-accent--focus">🎯 Focus Mode</h2>
+        <p>Stay in the zone with the Pomodoro technique.</p>
+      </section>
+
+      <!-- Focus Stats Row -->
+      <section class="metrics-row focus-metrics">
+        <div class="metric-card">
+          <div class="metric-icon">⏱️</div>
+          <div class="metric-content">
+            <p class="metric-label">This Session</p>
+            <h3 class="metric-value">16:20</h3>
+          </div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-icon">📊</div>
+          <div class="metric-content">
+            <p class="metric-label">Sessions Today</p>
+            <h3 class="metric-value">3 / 4</h3>
+          </div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-icon">🔥</div>
+          <div class="metric-content">
+            <p class="metric-label">Total Focus</p>
+            <h3 class="metric-value">1h 20m</h3>
+          </div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-icon">🎯</div>
+          <div class="metric-content">
+            <p class="metric-label">Break Time</p>
+            <h3 class="metric-value">5:00</h3>
+          </div>
+        </div>
+      </section>
+
+      <section class="focus-layout">
+        <!-- Timer -->
+        <section class="card">
+          <div class="focus-timer">
+            <div class="focus-ring">
+              <div class="focus-ring-inner">
+                <span class="focus-label">Focus Session</span>
+                <span class="focus-time">16:20</span>
+                <p>25‑minute Pomodoro · Session 3 of 4</p>
+              </div>
+            </div>
+
+            <div class="tabs">
+              <button class="active">Today</button>
+              <button>This Week</button>
+              <button>This Month</button>
+            </div>
+          </div>
+        </section>
+
+        <!-- Tips -->
+        <section class="card card--muted">
+          <h2>💡 Focus Tips</h2>
+          <div class="focus-tips-list">
+            <div class="focus-tip">
+              <span class="focus-tip-title">☕ Take short breaks</span>
+              <p>5-10 min breaks improve focus and reduce fatigue.</p>
+            </div>
+            <div class="focus-tip">
+              <span class="focus-tip-title">🎯 Single-task</span>
+              <p>One task at a time for better results.</p>
+            </div>
+            <div class="focus-tip">
+              <span class="focus-tip-title">🎵 Use ambient music</span>
+              <p>Lo-fi boosts deep work sessions.</p>
+            </div>
+            <div class="focus-tip">
+              <span class="focus-tip-title">💧 Stay hydrated</span>
+              <p>Water keeps cognitive performance high.</p>
+            </div>
+          </div>
+        </section>
+      </section>
+    </main>
+  </div>
+
+</body>
+</html>

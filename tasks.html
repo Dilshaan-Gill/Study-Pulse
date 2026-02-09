@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tasks</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="app-shell">
+    <header class="app-header">
+      <div class="brand">
+        <div class="brand-logo">SP</div>
+        <div class="brand-text">
+          <h1>StudyPulse</h1>
+          <p>Productivity & Finance</p>
+        </div>
+      </div>
+
+      <nav class="nav">
+        <a href="index.html">Dashboard</a>
+        <a class="active" aria-current="page" href="tasks.html">Tasks</a>
+        <a href="focus.html">Focus</a>
+        <a href="stats.html">Stats</a>
+        <a href="assignments.html">Assignments</a>
+        <a href="finance.html">Finance</a>
+        <a href="settings.html">Settings</a>
+      </nav>
+    </header>
+
+    <main class="page page--tasks">
+      <section class="page-header section-header section-header--tasks">
+        <h2 class="heading-accent heading-accent--tasks">✅ Task Manager</h2>
+        <p>Organize and track your daily tasks.</p>
+      </section>
+
+      <section class="dashboard dashboard--split">
+        <section class="card large card--accent-tasks">
+          <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;">
+            <h2>All Tasks</h2>
+            <div class="card-actions">
+              <button class="button-outline" id="add-task-btn">+ Add Task</button>
+            </div>
+          </div>
+          <div class="tabs">
+            <button class="active">All (5)</button>
+            <button>Study (3)</button>
+            <button>Health (1)</button>
+            <button>Personal (1)</button>
+          </div>
+
+          <div class="task">
+            <div class="task-left">
+              <div class="task-checkbox done"></div>
+              <p class="task-title completed">Complete Linear Algebra Assignment</p>
+            </div>
+            <div class="task-meta">
+              <span class="pill priority-high">High</span>
+              <span class="pill category">Study</span>
+              <span class="status status--done">Done</span>
+            </div>
+          </div>
+
+          <div class="task">
+            <div class="task-left">
+              <div class="task-checkbox"></div>
+              <p class="task-title">Review React Notes</p>
+            </div>
+            <div class="task-meta">
+              <span class="pill priority-medium">Medium</span>
+              <span class="pill category">Study</span>
+              <span class="status status--pending">Pending</span>
+            </div>
+          </div>
+
+          <div class="task">
+            <div class="task-left">
+              <div class="task-checkbox"></div>
+              <p class="task-title">Go for a 30‑min run</p>
+            </div>
+            <div class="task-meta">
+              <span class="pill priority-low">Low</span>
+              <span class="pill category">Health</span>
+              <span class="status status--pending">Pending</span>
+            </div>
+          </div>
+
+          <div class="task">
+            <div class="task-left">
+              <div class="task-checkbox done"></div>
+              <p class="task-title completed">Update budget spreadsheet</p>
+            </div>
+            <div class="task-meta">
+              <span class="pill priority-medium">Medium</span>
+              <span class="pill category">Personal</span>
+              <span class="status status--done">Done</span>
+            </div>
+          </div>
+
+          <!-- Add Task Form (hidden, toggled by + Add Task) -->
+          <form class="form-inline" id="add-task-form" style="display:none; margin-top:12px;">
+            <input type="text" name="title" placeholder="Task title" required style="padding:8px;border-radius:6px;border:1px solid #d1d5db;margin-right:8px;">
+            <select name="priority" style="padding:8px;border-radius:6px;border:1px solid #d1d5db;margin-right:8px;">
+              <option>Low</option>
+              <option>Medium</option>
+              <option>High</option>
+            </select>
+            <button class="button-outline" type="submit">Add</button>
+          </form>
+
+        </section>
+
+        <section class="card">
+          <h2>📊 Progress</h2>
+          <div class="stat-group">
+            <div class="stat-item">
+              <p class="stat-label">Completed</p>
+              <h3 class="stat-value">3 / 5</h3>
+            </div>
+            <div class="stat-item">
+              <p class="stat-label">Completion</p>
+              <h3 class="stat-value">60%</h3>
+            </div>
+          </div>
+          <div class="progress-bar">
+            <div class="progress" style="width: 60%"></div>
+          </div>
+          <p class="stat-note">✨ Keep it up!</p>
+        </section>
+
+        <section class="card">
+          <h2>⭐ Summary</h2>
+          <div class="stat-group">
+            <div class="stat-item">
+              <p class="stat-label">Remaining</p>
+              <h3 class="stat-value">5</h3>
+            </div>
+            <div class="stat-item">
+              <p class="stat-label">High Priority</p>
+              <h3 class="stat-value">2</h3>
+            </div>
+          </div>
+          <p class="stat-note" style="font-size: 12px; margin-top: 12px;">Due today: 2</p>
+        </section>
+
+        <!-- Weekly Tasks Chart -->
+        <section class="card large">
+          <h2>📊 Weekly Tasks</h2>
+          <div class="bar-chart">
+            <div class="bar"><div class="bar-fill bar-fill--m"></div></div>
+            <div class="bar"><div class="bar-fill bar-fill--xl"></div></div>
+            <div class="bar"><div class="bar-fill bar-fill--l"></div></div>
+            <div class="bar"><div class="bar-fill bar-fill--m"></div></div>
+            <div class="bar"><div class="bar-fill bar-fill--s"></div></div>
+            <div class="bar"><div class="bar-fill bar-fill--s"></div></div>
+            <div class="bar"><div class="bar-fill bar-fill--s"></div></div>
+          </div>
+          <div class="bar-labels">
+            <span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span><span>Sun</span>
+          </div>
+        </section>
+
+        <!-- Focus Hours Chart -->
+        <section class="card large">
+          <h2>⏱️ Focus Hours This Week</h2>
+          <div class="bar-chart bar-chart--focus">
+            <div class="bar"><div class="bar-fill bar-fill--xl"></div></div>
+            <div class="bar"><div class="bar-fill bar-fill--l"></div></div>
+            <div class="bar"><div class="bar-fill bar-fill--m"></div></div>
+            <div class="bar"><div class="bar-fill bar-fill--m"></div></div>
+            <div class="bar"><div class="bar-fill bar-fill--s"></div></div>
+            <div class="bar"><div class="bar-fill bar-fill--s"></div></div>
+            <div class="bar"><div class="bar-fill bar-fill--s"></div></div>
+          </div>
+          <div class="bar-labels">
+            <span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span><span>Sun</span>
+          </div>
+        </section>
+      </section>
+    </main>
+  </div>
+
+</body>
+</html>

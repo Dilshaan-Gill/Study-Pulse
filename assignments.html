@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignments</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="app-shell">
+    <header class="app-header">
+      <div class="brand">
+        <div class="brand-logo">SP</div>
+        <div class="brand-text">
+          <h1>StudyPulse</h1>
+          <p>Productivity & Finance</p>
+        </div>
+      </div>
+
+      <nav class="nav">
+        <a href="index.html">Dashboard</a>
+        <a href="tasks.html">Tasks</a>
+        <a href="focus.html">Focus</a>
+        <a href="stats.html">Stats</a>
+        <a href="assignments.html">Assignments</a>
+        <a href="finance.html">Finance</a>
+        <a href="settings.html">Settings</a>
+      </nav>
+    </header>
+
+    <main class="page page--assignments">
+      <section class="page-header section-header section-header--assignments">
+        <h2 class="heading-accent heading-accent--assignments">📚 Assignments</h2>
+        <p>Track upcoming deadlines and submissions.</p>
+      </section>
+
+      <!-- Due This Week Section -->
+      <section class="assignments-section">
+        <h3 class="section-title">📅 Due This Week</h3>
+        
+        <div class="assignment-list">
+          <!-- Assignment 1 -->
+          <article class="assignment-card">
+            <div class="assignment-header">
+              <div class="assignment-main">
+                <h4 class="assignment-title">Linear Algebra Problem Set 5</h4>
+                <p class="assignment-meta">
+                  <span class="subject-badge subject-badge--math">Mathematics</span>
+                  <span class="assignment-type">📝 Homework</span>
+                  <span class="assignment-time">⏱️ 2 hrs</span>
+                </p>
+              </div>
+              <div class="assignment-badges">
+                <span class="badge badge-priority badge-priority--high">High</span>
+                <span class="badge badge-status badge-status--not-started">Not Started</span>
+              </div>
+            </div>
+            <div class="assignment-footer">
+              <p class="assignment-due">Due: Feb 12, 2026</p>
+              <div class="assignment-progress">
+                <div class="progress-bar">
+                  <div class="progress" style="width: 0%;"></div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Assignment 2 -->
+          <article class="assignment-card">
+            <div class="assignment-header">
+              <div class="assignment-main">
+                <h4 class="assignment-title">React Component Design Project</h4>
+                <p class="assignment-meta">
+                  <span class="subject-badge subject-badge--tech">Computer Science</span>
+                  <span class="assignment-type">💻 Project</span>
+                  <span class="assignment-time">⏱️ 5 hrs</span>
+                </p>
+              </div>
+              <div class="assignment-badges">
+                <span class="badge badge-priority badge-priority--high">High</span>
+                <span class="badge badge-status badge-status--in-progress">In Progress</span>
+              </div>
+            </div>
+            <div class="assignment-footer">
+              <p class="assignment-due">Due: Feb 14, 2026</p>
+              <div class="assignment-progress">
+                <div class="progress-bar">
+                  <div class="progress" style="width: 60%;"></div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Assignment 3 -->
+          <article class="assignment-card">
+            <div class="assignment-header">
+              <div class="assignment-main">
+                <h4 class="assignment-title">Biology Lab Report: Cell Mitosis</h4>
+                <p class="assignment-meta">
+                  <span class="subject-badge subject-badge--science">Science</span>
+                  <span class="assignment-type">🔬 Lab Report</span>
+                  <span class="assignment-time">⏱️ 2.5 hrs</span>
+                </p>
+              </div>
+              <div class="assignment-badges">
+                <span class="badge badge-priority badge-priority--medium">Medium</span>
+                <span class="badge badge-status badge-status--in-progress">In Progress</span>
+              </div>
+            </div>
+            <div class="assignment-footer">
+              <p class="assignment-due">Due: Feb 15, 2026</p>
+              <div class="assignment-progress">
+                <div class="progress-bar">
+                  <div class="progress" style="width: 45%;"></div>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Overdue Section -->
+      <section class="assignments-section">
+        <h3 class="section-title">⚠️ Overdue</h3>
+        
+        <div class="assignment-list">
+
+          <!-- Overdue Assignment 1 -->
+          <article class="assignment-card assignment-card--overdue">
+            <div class="assignment-header">
+              <div class="assignment-main">
+                <h4 class="assignment-title">C programing</h4>
+                <p class="assignment-meta">
+                  <span class="subject-badge subject-badge--physics">C</span>
+                  <span class="assignment-type">📝 Homework</span>
+                  <span class="assignment-time">⏱️ 1.5 hrs</span>
+                </p>
+              </div>
+              <div class="assignment-badges">
+                <span class="badge badge-priority badge-priority--medium">Medium</span>
+                <span class="badge badge-status badge-status--in-progress">In Progress</span>
+              </div>
+            </div>
+            <div class="assignment-footer">
+              <p class="assignment-due assignment-due--overdue">Due: Feb 9, 2026 (1 day ago)</p>
+              <div class="assignment-progress">
+                <div class="progress-bar">
+                  <div class="progress" style="width: 25%;"></div>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Upcoming Section -->
+      <section class="assignments-section">
+        <h3 class="section-title">🗓️ Upcoming (Next 2 Weeks)</h3>
+        
+        <div class="assignment-list">
+          <!-- Upcoming Assignment 1 -->
+          <article class="assignment-card">
+            <div class="assignment-header">
+              <div class="assignment-main">
+                <h4 class="assignment-title">Chemistry Practical Exam</h4>
+                <p class="assignment-meta">
+                  <span class="subject-badge subject-badge--science">Science</span>
+                  <span class="assignment-type">📋 Exam</span>
+                  <span class="assignment-time">⏱️ 2 hrs</span>
+                </p>
+              </div>
+              <div class="assignment-badges">
+                <span class="badge badge-priority badge-priority--high">High</span>
+                <span class="badge badge-status badge-status--not-started">Not Started</span>
+              </div>
+            </div>
+            <div class="assignment-footer">
+              <p class="assignment-due">Due: Feb 22, 2026</p>
+              <div class="assignment-progress">
+                <div class="progress-bar">
+                  <div class="progress" style="width: 0%;"></div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Upcoming Assignment 2 -->
+          <article class="assignment-card">
+            <div class="assignment-header">
+              <div class="assignment-main">
+                <h4 class="assignment-title">Group Project: Climate Change Solutions</h4>
+                <p class="assignment-meta">
+                  <span class="subject-badge subject-badge--green">Geography</span>
+                  <span class="assignment-type">🎯 Group Project</span>
+                  <span class="assignment-time">⏱️ 6 hrs</span>
+                </p>
+              </div>
+              <div class="assignment-badges">
+                <span class="badge badge-priority badge-priority--medium">Medium</span>
+                <span class="badge badge-status badge-status--not-started">Not Started</span>
+              </div>
+            </div>
+            <div class="assignment-footer">
+              <p class="assignment-due">Due: Feb 20, 2026</p>
+              <div class="assignment-progress">
+                <div class="progress-bar">
+                  <div class="progress" style="width: 0%;"></div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Upcoming Assignment 3 -->
+          <article class="assignment-card">
+            <div class="assignment-header">
+              <div class="assignment-main">
+                <h4 class="assignment-title">Statistics Quiz</h4>
+                <p class="assignment-meta">
+                  <span class="subject-badge subject-badge--math">Mathematics</span>
+                  <span class="assignment-type">❓ Quiz</span>
+                  <span class="assignment-time">⏱️ 1 hr</span>
+                </p>
+              </div>
+              <div class="assignment-badges">
+                <span class="badge badge-priority badge-priority--low">Low</span>
+                <span class="badge badge-status badge-status--not-started">Not Started</span>
+              </div>
+            </div>
+            <div class="assignment-footer">
+              <p class="assignment-due">Due: Feb 18, 2026</p>
+              <div class="assignment-progress">
+                <div class="progress-bar">
+                  <div class="progress" style="width: 0%;"></div>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Summary Stats -->
+      <section class="assignments-summary">
+        <div class="summary-card">
+          <p class="summary-label">📊 Total Assignments</p>
+          <p class="summary-value">9</p>
+        </div>
+        <div class="summary-card">
+          <p class="summary-label">✅ Submitted</p>
+          <p class="summary-value">1</p>
+        </div>
+        <div class="summary-card">
+          <p class="summary-label">🔄 In Progress</p>
+          <p class="summary-value">3</p>
+        </div>
+        <div class="summary-card">
+          <p class="summary-label">⏰ Not Started</p>
+          <p class="summary-value">5</p>
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Settings - StudyPulse</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="app-shell">
+    <header class="app-header">
+      <div class="brand">
+        <div class="brand-logo">SP</div>
+        <div class="brand-text">
+          <h1>StudyPulse</h1>
+          <p>Productivity & Finance</p>
+        </div>
+      </div>
+
+      <nav class="nav">
+        <a href="index.html">Dashboard</a>
+        <a href="tasks.html">Tasks</a>
+        <a href="focus.html">Focus</a>
+        <a href="stats.html">Stats</a>
+        <a href="assignments.html">Assignments</a>
+        <a href="finance.html">Finance</a>
+        <a class="active" aria-current="page" href="settings.html">Settings</a>
+      </nav>
+    </header>
+
+    <main class="page page--settings">
+      <section class="page-header">
+        <h2>Settings</h2>
+        <p>Customize your StudyPulse experience.</p>
+      </section>
+
+      <section class="settings-layout">
+        <!-- Profile -->
+        <section class="card profile-card">
+          <h2>Profile</h2>
+          <div class="avatar">DG</div>
+          <div>
+            <p class="preference-label">Dilshaan Singh Gill</p>
+            <p class="preference-description">dilshaan3515.beai25@chitkara.edu.in</p>
+          </div>
+          <p class="pill">Computer Science AI&ML · Year 1</p>
+        </section>
+
+        <!-- Preferences -->
+        <section class="card">
+          <h2>Preferences</h2>
+
+          <div class="preference-row">
+            <div class="preference-text">
+              <span class="preference-label">Theme</span>
+              <span class="preference-description">Dark (default)</span>
+            </div>
+            <div class="preference-meta">
+              <span class="pill">Dark</span>
+            </div>
+          </div>
+
+          <div class="preference-row">
+            <div class="preference-text">
+              <span class="preference-label">Currency</span>
+              <span class="preference-description">Default currency for finance tracking.</span>
+            </div>
+            <span class="pill-input">₹ INR</span>
+          </div>
+
+          <div class="preference-row">
+            <div class="preference-text">
+              <span class="preference-label">Daily Task Goal</span>
+              <span class="preference-description">Tasks to complete each day.</span>
+            </div>
+            <span class="pill-input">5 tasks</span>
+          </div>
+
+          <div class="preference-row">
+            <div class="preference-text">
+              <span class="preference-label">Notifications</span>
+              <span class="preference-description">Reminders and alerts.</span>
+            </div>
+            <div class="toggle toggle--on">
+              <div class="toggle-track">
+                <div class="toggle-thumb"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="preference-row">
+            <div class="preference-text">
+              <span class="preference-label">Data Privacy</span>
+              <span class="preference-description">Keep data local only.</span>
+            </div>
+            <div class="toggle">
+              <div class="toggle-track">
+                <div class="toggle-thumb"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+    </main>
+  </div>
+
+</body>
+</html>
